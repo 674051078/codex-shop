@@ -1,0 +1,17 @@
+{
+  "name": "restaurant-ordering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "一个简单的餐厅订餐静态页面",
+  "scripts": {
+    "serve": "npx serve .",
+    "check": "node --check app.js"
+  },
+  "keywords": [
+    "restaurant",
+    "ordering",
+    "frontend"
+  ],
+  "author": "",
+  "license": "MIT"
+}

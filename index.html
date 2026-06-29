@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>餐厅订餐</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="menu">
+        <h1>禾味餐厅订餐</h1>
+        <p class="sub">选择喜欢的菜品，加入购物车后提交订单。</p>
+
+        <div class="dish-list">
+          <article class="dish">
+            <div>
+              <h2>红汤牛腩面</h2>
+              <p>慢炖牛腩，微辣红汤。</p>
+              <strong>¥36</strong>
+            </div>
+            <button data-name="红汤牛腩面" data-price="36">加入</button>
+          </article>
+
+          <article class="dish">
+            <div>
+              <h2>葱油鸡腿饭</h2>
+              <p>去骨鸡腿，配米饭和时蔬。</p>
+              <strong>¥42</strong>
+            </div>
+            <button data-name="葱油鸡腿饭" data-price="42">加入</button>
+          </article>
+
+          <article class="dish">
+            <div>
+              <h2>砂锅麻婆豆腐</h2>
+              <p>嫩豆腐和牛肉末，香辣下饭。</p>
+              <strong>¥32</strong>
+            </div>
+            <button data-name="砂锅麻婆豆腐" data-price="32">加入</button>
+          </article>
+
+          <article class="dish">
+            <div>
+              <h2>手打柠檬茶</h2>
+              <p>清爽茶底，可选少糖。</p>
+              <strong>¥18</strong>
+            </div>
+            <button data-name="手打柠檬茶" data-price="18">加入</button>
+          </article>
+        </div>
+      </section>
+
+      <aside class="cart">
+        <h2>购物车</h2>
+        <div id="cartItems" class="cart-items">还没有选择菜品</div>
+        <div class="total">
+          <span>合计</span>
+          <strong id="totalPrice">¥0</strong>
+        </div>
+        <input id="phone" type="tel" placeholder="手机号" />
+        <textarea id="note" rows="3" placeholder="备注：少辣、不要香菜等"></textarea>
+        <button id="submitOrder" class="submit" disabled>提交订单</button>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
